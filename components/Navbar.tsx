@@ -1,4 +1,3 @@
-
 const Navbar = () => {
   return (
     <nav className="bg-white hidden md:block p-4 shadow-lg sticky z-10 top-0 mb-8">
@@ -9,7 +8,15 @@ const Navbar = () => {
               className="block px-4 py-2  rounded-md ransition-all duration-500"
               href="#"
             >
-              <img  src="/logo.svg" alt="" />
+              {/* <img src="/logo.svg" alt="" /> */}
+
+              <div className="relative group">
+                <img
+                  src="/logo.svg"
+                  alt="Avatar"
+                  className="  object-cover transform transition-transform group-hover:scale-110"
+                />
+              </div>
             </a>
           </li>
           <li>
@@ -32,8 +39,6 @@ const Navbar = () => {
             />
           </div>
         </div>
-
-        
       </div>
     </nav>
   );
