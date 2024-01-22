@@ -1,14 +1,27 @@
 "use client";
 import Tabs from "./FullWidthTabs";
+import QuestionFromCoach from "./QuestionFromCoach";
 import QuestionFromGPT from "./QuestionFromGPT";
 
-
 const tabs = [
-  { label: "سوال از ربات QGPT", content: <div>Content for Tab 1</div> },
-  { label: "سوال از مربی‌های دوره", content: <div>Content for Tab 2</div> },
+  {
+    label: "سوال از ربات QGPT",
+    content: (
+      <div>
+        {" "}
+        <QuestionFromGPT />
+      </div>
+    ),
+  },
+  {
+    label: "سوال از مربی‌های دوره",
+    content: (
+      <div>
+        <QuestionFromCoach />
+      </div>
+    ),
+  },
 ];
-
-
 
 const Form = () => {
   return (
@@ -24,11 +37,7 @@ const Form = () => {
             برای رفع خطا گذاشتید و به نتیجه نرسیدید، ما اینجاییم که در فرایند
             دیباگ کردن بهتون کمک کنیم.
           </div>
-
           <Tabs tabs={tabs} />
-
-         <QuestionFromGPT/>
-
         </div>
       </div>
     </div>

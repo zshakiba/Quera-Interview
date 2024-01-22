@@ -37,7 +37,7 @@ const QuestionDetails: React.FC<ListItemProps> = ({ itemText, tags }) => (
 
       <div className="flex  items-center">
         {tags.map((tag, index) => (
-          <div className="flex justify-normal items-center bg-gray-200 p-1 rounded m-1 text-xs" key={index}>
+          <div className="flex justify-normal items-center bg-cyan-100 px-1 rounded m-1 text-xs text-cyan-700" key={index}>
             {tag}
           </div>
         ))}

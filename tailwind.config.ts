@@ -24,13 +24,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      extend: {
-        colors: {
-          primary: {
-            customColor: 'rgb(var(--color-primary) / <alpha-value>)',
-          },
-        },
-      },
+      
     },
   },
   plugins: [],

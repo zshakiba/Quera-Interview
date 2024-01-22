@@ -48,7 +48,7 @@ const QuestionFromGPT = () => {
             کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
           </div>
 
-          <div className="bg-blue-100 m-2 p-3 rounded">
+          <div className="bg-gray-50 m-2 p-3 rounded">
             <div className="flex items-center gap-x-4">
               <IconQGBT />
               <h4 className="text-base text-slate-900 font-normal text-sm">
