@@ -1,5 +1,5 @@
 
-import CodeSnippet from "./ui/Code";
+import CodeSnippet from "../components/ui/CodeSnippet ";
 
 import { IconArrow, IconQGBT, IconUser } from "./ui/Icons";
 import { Input } from "./ui/Input";

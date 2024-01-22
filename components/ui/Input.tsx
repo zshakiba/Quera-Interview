@@ -18,9 +18,9 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           {...props}
         />
         {icon && (
-          <div className="bg-gray-200 p-2 rounded-md">
+          <a href="#" className="bg-gray-200 p-2 rounded-md">
             {React.cloneElement(icon, { className: "text-gray-500" })}
-          </div>
+          </a>
         )}
       </div>
     );

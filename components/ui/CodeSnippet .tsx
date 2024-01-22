@@ -1,15 +1,22 @@
 import React from "react";
-import { render } from "react-dom";
-import CodeSnippet from "./Code";
 
-const App: React.FC = () => {
+const CodeSnippet: React.FC = () => {
+  var code = `
+  #include &lt;stdio.h&gt;   
+  int main()
+  {
+  // this is a comment!
+  return 0;
+  }`;
+  
+  
   return (
     <div>
-      <h1>Your Next.js Page</h1>
-      <CodeSnippet />
+      <pre>
+        <code dangerouslySetInnerHTML={{ __html: code }} />
+      </pre>
     </div>
   );
-};
-
-// Use the render function to render your main App component
-render(<App />, document.getElementById("root"));
+  };
+  
+  export default CodeSnippet;

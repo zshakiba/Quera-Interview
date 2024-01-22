@@ -12,9 +12,9 @@ const tabs = [
 
 const Form = () => {
   return (
-    <div className="md:block col-span-7 lg:col-span-7 xl:col-span-7 row-span-7 ">
+    <div className="md:block col-span-6 lg:col-span-7 xl:col-span-7 row-span-7 ">
       <div className="bg-white max-h-[calc(100vh_-_140px)] overflow-y-auto sticky top-28 rounded-md border-solid border-gray-500 ">
-        <div className="mb-7">
+        <div className="mb-1">
           <div className="text-lg text-gray-900 bg-gray-200 p-3">
             درخواست پشتیبانی
           </div>
