@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 
-function IconQGBT({ className, ...props }: React.ComponentProps<"svg">) {
+function IconQGBT({ className, ...props }: React.ComponentProps<"img">) {
   return (
     <img
       className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
@@ -10,7 +10,7 @@ function IconQGBT({ className, ...props }: React.ComponentProps<"svg">) {
     />
   );
 }
-function IconUser({ className, ...props }: React.ComponentProps<"svg">) {
+function IconUser({ className, ...props }: React.ComponentProps<"img">) {
   return (
     <img
       className="inline-block h-10 w-10 rounded-full ring-2 ring-white"

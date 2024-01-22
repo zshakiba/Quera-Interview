@@ -1,3 +1,4 @@
+
 import { IconArrow } from "./ui/Icons";
 import { Input } from "./ui/Input";
 import QuestionInput from "./QuestionInput";
@@ -12,20 +13,22 @@ const options = [
 
 const QuestionFromCoach = () => {
   return (
-    <div className="w-full">
-      <div className="flex justify-between items-center">
-        <QuestionInput placeholder="عنوان سوال" />
-        <QuestionSelect options={options} />
-      </div>
+    <div >
+    <div className="flex justify-between items-center">
+      <QuestionInput placeholder="عنوان سوال" />
+      <QuestionSelect options={options} />
+    </div>
 
-      <div className="flex-1  border border-gray-300 rounded-md m-2">
-        <Input
-          type="text"
-          placeholder="سوال خودتون رو اینجا بنویسید"
-          icon={<IconArrow />}
-          className="focus:outline-none bg-transparent w-full p-2 text-slate-800"
-        />
-      </div>
+    
+
+    <div className="flex-1  border border-gray-300 rounded-md m-2">
+      <Input
+        type="text"
+        placeholder="سوال خودتون رو اینجا بنویسید"
+        icon={<IconArrow />}
+        className="focus:outline-none bg-transparent w-full p-2 text-slate-800"
+      />
+    </div>
     </div>
   );
 };
