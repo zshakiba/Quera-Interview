@@ -11,17 +11,27 @@ interface UserInfoProps {
   date: string;
   className: string;
   icon: ReactNode;
+  content: string;
 }
 
 interface QuestionFromGPTProps {
   options: { value: string; label: string }[];
 }
 
-const UserInfo: React.FC<UserInfoProps> = ({ name, date, className, icon }) => (
-  <div className={`flex items-center gap-x-4 ${className}`}>
-    {icon}
-    <h4 className="text-base text-slate-900 font-normal text-sm">{name}</h4>
-    <h4 className="text-gray-500 font-normal text-sm">{date}</h4>
+const UserInfo: React.FC<UserInfoProps> = ({
+  name,
+  date,
+  className,
+  icon,
+  content,
+}) => (
+  <div>
+    <div className={`flex items-center gap-x-4 ${className}`}>
+      {icon}
+      <h4 className="text-base text-slate-900 font-normal text-sm">{name}</h4>
+      <h4 className="text-gray-500 font-normal text-sm">{date}</h4>
+    </div>
+    <ContentSection content={content} />
   </div>
 );
 
@@ -44,8 +54,6 @@ const QuestionFromGPT: React.FC<QuestionFromGPTProps> = ({ options }) => {
         date="۲۳ خرداد ۱۴۰۲ ساعت ۱۶:۴۲"
         className="px-3"
         icon={<IconUser />}
-      />
-      <ContentSection
         content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
@@ -58,8 +66,6 @@ const QuestionFromGPT: React.FC<QuestionFromGPTProps> = ({ options }) => {
           date="۲۳ خرداد ۱۴۰۲ ساعت ۱۶:۴۲"
           className="px-3"
           icon={<IconQGBT />}
-        />
-        <ContentSection
           content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است."
@@ -68,6 +74,7 @@ const QuestionFromGPT: React.FC<QuestionFromGPTProps> = ({ options }) => {
           <CodeSnippet />
         </div>
       </div>
+
       <div className="flex-1  border border-gray-300 rounded-md m-2">
         <Input
           type="text"
