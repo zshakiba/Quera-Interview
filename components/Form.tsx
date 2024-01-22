@@ -3,13 +3,19 @@ import Tabs from "./FullWidthTabs";
 import QuestionFromCoach from "./QuestionFromCoach";
 import QuestionFromGPT from "./QuestionFromGPT";
 
+const options = [
+  { value: "", label: "مسئله" },
+  { value: "option1", label: "گزینه 1" },
+  { value: "option2", label: "گزینه 2" },
+  { value: "option3", label: "گزینه 3" },
+];
 const tabs = [
   {
     label: "سوال از ربات QGPT",
     content: (
       <div>
         {" "}
-        <QuestionFromGPT />
+        <QuestionFromGPT options={options} />
       </div>
     ),
   },

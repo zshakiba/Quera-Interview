@@ -19,7 +19,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
           {tabs.map((tab, index) => (
             <div
               key={index}
-              className={`flex-1 cursor-pointer px-4 py-2 flex items-center justify-center font-bold text-gray-600 ${
+              className={`flex-1 cursor-pointer px-4 py-2 flex items-center justify-center font-bold text-gray-600 border-b-2 border-gray-300 ${
                 activeTab === index ? "border-b-2 border-cyan-500" : ""
               }`}
               onClick={() => setActiveTab(index)}
